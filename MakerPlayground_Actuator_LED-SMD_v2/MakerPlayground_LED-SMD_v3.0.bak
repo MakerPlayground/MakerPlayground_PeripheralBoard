@@ -1,0 +1,87 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5AAC0D9D
+P 4800 3900
+F 0 "D1" V 4838 3783 50  0000 R CNN
+F 1 "LED" V 4747 3783 50  0000 R CNN
+F 2 "GiraffeTech-LED:LED_0603" H 4800 3900 50  0001 C CNN
+F 3 "~" H 4800 3900 50  0001 C CNN
+	1    4800 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5AAC0F11
+P 6450 3750
+F 0 "J1" H 6400 3450 50  0000 L CNN
+F 1 "Connector" H 6250 3950 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 6450 3750 50  0001 C CNN
+F 3 "~" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5AAC10EC
+P 5350 4300
+F 0 "#PWR02" H 5350 4050 50  0001 C CNN
+F 1 "GND" H 5355 4127 50  0000 C CNN
+F 2 "" H 5350 4300 50  0001 C CNN
+F 3 "" H 5350 4300 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5AAC1184
+P 4800 3500
+F 0 "R1" H 4859 3546 50  0000 L CNN
+F 1 "330" H 4859 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 3500 50  0001 C CNN
+F 3 "~" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3850 5350 4250
+Wire Wire Line
+	4800 3600 4800 3750
+Wire Wire Line
+	4800 4250 5350 4250
+Connection ~ 5350 4250
+Wire Wire Line
+	5350 4250 5350 4300
+Text Label 5750 3550 0    50   ~ 0
+Signal
+Text Label 5750 3850 0    50   ~ 0
+GND
+Wire Wire Line
+	5350 3850 6250 3850
+Wire Wire Line
+	5350 3550 6250 3550
+Wire Wire Line
+	4800 3250 5350 3250
+Wire Wire Line
+	5350 3250 5350 3550
+Wire Wire Line
+	4800 3250 4800 3400
+Wire Wire Line
+	4800 4050 4800 4250
+NoConn ~ 6250 3650
+NoConn ~ 6250 3750
+$EndSCHEMATC

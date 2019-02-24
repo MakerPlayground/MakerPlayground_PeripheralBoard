@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5ABA1EEF
+P 7050 3900
+F 0 "J1" H 7130 3892 50  0000 L CNN
+F 1 "Conn_01x04" H 7130 3801 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7050 3900 50  0001 C CNN
+F 3 "~" H 7050 3900 50  0001 C CNN
+	1    7050 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5AD0718E
+P 6750 3600
+F 0 "#PWR0102" H 6750 3450 50  0001 C CNN
+F 1 "VCC" H 6767 3773 50  0000 C CNN
+F 2 "" H 6750 3600 50  0001 C CNN
+F 3 "" H 6750 3600 50  0001 C CNN
+	1    6750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3600 6750 3900
+Wire Wire Line
+	6750 3900 6850 3900
+$Comp
+L power:GND #PWR0103
+U 1 1 5AD076D8
+P 6750 4100
+F 0 "#PWR0103" H 6750 3850 50  0001 C CNN
+F 1 "GND" H 6755 3927 50  0000 C CNN
+F 2 "" H 6750 4100 50  0001 C CNN
+F 3 "" H 6750 4100 50  0001 C CNN
+	1    6750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4000 6750 4000
+Wire Wire Line
+	6750 4000 6750 4100
+$Comp
+L Device:C C1
+U 1 1 5AD09A10
+P 4300 3850
+F 0 "C1" H 4415 3896 50  0000 L CNN
+F 1 "0.1uF" H 4415 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 3700 50  0001 C CNN
+F 3 "~" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 5AD09AC2
+P 4300 3650
+F 0 "#PWR0106" H 4300 3500 50  0001 C CNN
+F 1 "VCC" H 4317 3823 50  0000 C CNN
+F 2 "" H 4300 3650 50  0001 C CNN
+F 3 "" H 4300 3650 50  0001 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3650 4300 3700
+$Comp
+L power:GND #PWR0107
+U 1 1 5AD0A325
+P 4300 4050
+F 0 "#PWR0107" H 4300 3800 50  0001 C CNN
+F 1 "GND" H 4305 3877 50  0000 C CNN
+F 2 "" H 4300 4050 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4050 4300 4000
+$Comp
+L Sensor_Temperature:BD1020HFV U1
+U 1 1 5B22D01D
+P 5500 3850
+F 0 "U1" H 5500 4217 50  0000 C CNN
+F 1 "BD1020HFV" H 5500 4126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:HVSOF5" H 5500 3450 50  0001 C CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/temperature/bd1020hfv-e.pdf" H 5500 3850 50  0001 C CNN
+	1    5500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5B22D205
+P 6000 4100
+F 0 "#PWR0101" H 6000 3850 50  0001 C CNN
+F 1 "GND" H 6005 3927 50  0000 C CNN
+F 2 "" H 6000 4100 50  0001 C CNN
+F 3 "" H 6000 4100 50  0001 C CNN
+	1    6000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3950 6000 3950
+Wire Wire Line
+	6000 3950 6000 4100
+Wire Wire Line
+	6650 3750 6650 3700
+Wire Wire Line
+	6650 3700 6850 3700
+Wire Wire Line
+	5900 3750 6650 3750
+$Comp
+L power:VCC #PWR0104
+U 1 1 5B22D3C4
+P 4950 3650
+F 0 "#PWR0104" H 4950 3500 50  0001 C CNN
+F 1 "VCC" H 4967 3823 50  0000 C CNN
+F 2 "" H 4950 3650 50  0001 C CNN
+F 3 "" H 4950 3650 50  0001 C CNN
+	1    4950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3650 4950 3750
+Wire Wire Line
+	4950 3750 5100 3750
+NoConn ~ 5100 3850
+$EndSCHEMATC

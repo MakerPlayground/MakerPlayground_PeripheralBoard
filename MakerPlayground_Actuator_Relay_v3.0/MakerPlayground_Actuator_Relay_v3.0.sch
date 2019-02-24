@@ -1,0 +1,195 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5AC7CEF3
+P 3000 2000
+F 0 "J1" H 3150 1900 50  0000 C CNN
+F 1 "Conn_01x04" H 3300 2000 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 3000 2000 50  0001 C CNN
+F 3 "~" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 5AC7D0CC
+P 3550 3700
+F 0 "Q1" H 3741 3746 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 3741 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 3800 50  0001 C CNN
+F 3 "~" H 3550 3700 50  0001 C CNN
+	1    3550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SANYOU_SRD_Form_C K1
+U 1 1 5AC7D5CF
+P 3850 3100
+F 0 "K1" H 4280 3146 50  0000 L CNN
+F 1 "SANYOU_SRD_Form_C" H 4280 3055 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 4300 3050 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_ALT D1
+U 1 1 5AC7D6C3
+P 3150 3100
+F 0 "D1" V 3104 3179 50  0000 L CNN
+F 1 "M7" V 3195 3179 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 3150 3100 50  0001 C CNN
+F 3 "~" H 3150 3100 50  0001 C CNN
+	1    3150 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 3250 3150 3450
+Wire Wire Line
+	3150 3450 3650 3450
+Wire Wire Line
+	3650 3450 3650 3400
+Wire Wire Line
+	3650 3450 3650 3500
+Connection ~ 3650 3450
+Wire Wire Line
+	3150 2950 3150 2750
+Wire Wire Line
+	3150 2750 3650 2750
+Wire Wire Line
+	3650 2750 3650 2800
+$Comp
+L power:VCC #PWR0101
+U 1 1 5AC7D8B9
+P 3650 2700
+F 0 "#PWR0101" H 3650 2550 50  0001 C CNN
+F 1 "VCC" H 3667 2873 50  0000 C CNN
+F 2 "" H 3650 2700 50  0001 C CNN
+F 3 "" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2700 3650 2750
+Connection ~ 3650 2750
+$Comp
+L Device:R R1
+U 1 1 5AC7D963
+P 2900 3700
+F 0 "R1" V 2693 3700 50  0000 C CNN
+F 1 "1K" V 2784 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 3700 50  0001 C CNN
+F 3 "~" H 2900 3700 50  0001 C CNN
+	1    2900 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 3700 3350 3700
+Wire Wire Line
+	2750 3700 2650 3700
+$Comp
+L power:GND #PWR0102
+U 1 1 5AC7DAAA
+P 3650 4000
+F 0 "#PWR0102" H 3650 3750 50  0001 C CNN
+F 1 "GND" H 3655 3827 50  0000 C CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3900 3650 4000
+Text GLabel 2650 3700 0    50   Input ~ 0
+SIG
+$Comp
+L power:GND #PWR0103
+U 1 1 5AC7DDC2
+P 3300 2200
+F 0 "#PWR0103" H 3300 1950 50  0001 C CNN
+F 1 "GND" H 3305 2027 50  0000 C CNN
+F 2 "" H 3300 2200 50  0001 C CNN
+F 3 "" H 3300 2200 50  0001 C CNN
+	1    3300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2100 3300 2100
+Wire Wire Line
+	3300 2100 3300 2200
+$Comp
+L power:VCC #PWR0104
+U 1 1 5AC7DEA3
+P 3300 1700
+F 0 "#PWR0104" H 3300 1550 50  0001 C CNN
+F 1 "VCC" H 3317 1873 50  0000 C CNN
+F 2 "" H 3300 1700 50  0001 C CNN
+F 3 "" H 3300 1700 50  0001 C CNN
+	1    3300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1700 3300 2000
+Wire Wire Line
+	3300 2000 3200 2000
+Wire Wire Line
+	3200 1800 3400 1800
+NoConn ~ 3200 1900
+Text GLabel 3400 1800 2    50   Input ~ 0
+SIG
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5AC7E37A
+P 5600 2800
+F 0 "J2" H 5550 2600 50  0000 L CNN
+F 1 "Terminal Block" H 5550 2900 50  0000 L CNN
+F 2 "GiraffeTech-Connector:TerminalBlock_Dinkle_ED350V_1x02_P3.50mm_Horizontal" H 5600 2800 50  0001 C CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4150 2800 4150 2700
+Wire Wire Line
+	4050 3400 4050 3500
+NoConn ~ 3950 2800
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5B223BC4
+P 5600 3250
+F 0 "J3" H 5550 3050 50  0000 L CNN
+F 1 "Terminal Block" H 5550 3350 50  0000 L CNN
+F 2 "GiraffeTech-Connector:TerminalBlock_Dinkle_ED350V_1x02_P3.50mm_Horizontal" H 5600 3250 50  0001 C CNN
+F 3 "~" H 5600 3250 50  0001 C CNN
+	1    5600 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5400 2800 5350 2800
+Wire Wire Line
+	5350 2800 5350 3150
+Wire Wire Line
+	5350 3150 5400 3150
+Wire Wire Line
+	4150 2700 5400 2700
+Wire Wire Line
+	5350 3500 5350 3250
+Wire Wire Line
+	5350 3250 5400 3250
+Wire Wire Line
+	4050 3500 5350 3500
+$EndSCHEMATC

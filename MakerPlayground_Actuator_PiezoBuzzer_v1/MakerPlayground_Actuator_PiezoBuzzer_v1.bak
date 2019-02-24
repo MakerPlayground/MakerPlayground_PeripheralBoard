@@ -1,0 +1,62 @@
+EESchema Schematic File Version 4
+LIBS:piezzo-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5AC8C68E
+P 4300 3600
+F 0 "J1" H 4450 3600 50  0000 C CNN
+F 1 "Conn_01x04" H 4600 3500 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 4300 3600 50  0001 C CNN
+F 3 "~" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4500 3600
+NoConn ~ 4500 3500
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5AC8C8C4
+P 5150 3500
+F 0 "BZ1" H 5303 3529 50  0000 L CNN
+F 1 "Buzzer" H 5303 3438 50  0000 L CNN
+F 2 "GiraffeTech-Murata:PKM22EPPH2002-B0" V 5125 3600 50  0001 C CNN
+F 3 "~" V 5125 3600 50  0001 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5AC8C93F
+P 4750 3400
+F 0 "R1" V 4543 3400 50  0000 C CNN
+F 1 "1K" V 4634 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3400 50  0001 C CNN
+F 3 "~" H 4750 3400 50  0001 C CNN
+	1    4750 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3400 4600 3400
+Wire Wire Line
+	4900 3400 5050 3400
+Wire Wire Line
+	4500 3700 4950 3700
+Wire Wire Line
+	4950 3700 4950 3600
+Wire Wire Line
+	4950 3600 5050 3600
+$EndSCHEMATC
