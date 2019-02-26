@@ -127,7 +127,7 @@
     (add_net VCC)
   )
 
-  (module MountingHole:MountingHole_3mm (layer F.Cu) (tedit 5C759CFD) (tstamp 5C75A9CD)
+  (module MountingHole:MountingHole_3mm locked (layer F.Cu) (tedit 5C759CFD) (tstamp 5C75A9CD)
     (at 129 105)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
@@ -754,7 +754,7 @@
     )
   )
 
-  (module MountingHole:MountingHole_3mm (layer F.Cu) (tedit 5C759CFD) (tstamp 5C75A9C2)
+  (module MountingHole:MountingHole_3mm locked (layer F.Cu) (tedit 5C759CFD) (tstamp 5C75A9C2)
     (at 154 105)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
