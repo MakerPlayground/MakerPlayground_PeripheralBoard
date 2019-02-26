@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Button-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -31,7 +30,7 @@ U 1 1 5AAC60F3
 P 6750 3200
 F 0 "J1" H 6830 3192 50  0000 L CNN
 F 1 "Connector" H 6830 3101 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 6750 3200 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal" H 6750 3200 50  0001 C CNN
 F 3 "~" H 6750 3200 50  0001 C CNN
 	1    6750 3200
 	1    0    0    1   
