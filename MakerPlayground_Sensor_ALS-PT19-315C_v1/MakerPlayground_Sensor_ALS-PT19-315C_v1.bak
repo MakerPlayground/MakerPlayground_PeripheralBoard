@@ -1,0 +1,114 @@
+EESchema Schematic File Version 4
+LIBS:MakerPlayground_ALS-PT19-315C-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MakerPlayground - LDR"
+Date "2018-05-10"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5AC75D6C
+P 5550 3950
+F 0 "J1" H 5700 3850 50  0000 C CNN
+F 1 "Conn_01x04" H 5850 3950 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 5550 3950 50  0001 C CNN
+F 3 "~" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5AC75EA6
+P 6300 3950
+F 0 "R2" H 6370 3996 50  0000 L CNN
+F 1 "10K" H 6370 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 3950 50  0001 C CNN
+F 3 "~" H 6300 3950 50  0001 C CNN
+	1    6300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3750 6300 3750
+Connection ~ 6300 3750
+Wire Wire Line
+	6300 3750 6300 3800
+$Comp
+L power:GND #PWR0101
+U 1 1 5AC75FFF
+P 5850 4150
+F 0 "#PWR0101" H 5850 3900 50  0001 C CNN
+F 1 "GND" H 5855 3977 50  0000 C CNN
+F 2 "" H 5850 4150 50  0001 C CNN
+F 3 "" H 5850 4150 50  0001 C CNN
+	1    5850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4050 5850 4050
+Wire Wire Line
+	5850 4050 5850 4150
+$Comp
+L power:GND #PWR0102
+U 1 1 5AC7605C
+P 6300 4200
+F 0 "#PWR0102" H 6300 3950 50  0001 C CNN
+F 1 "GND" H 6305 4027 50  0000 C CNN
+F 2 "" H 6300 4200 50  0001 C CNN
+F 3 "" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4100 6300 4200
+$Comp
+L power:VCC #PWR0103
+U 1 1 5AC7612F
+P 5850 3650
+F 0 "#PWR0103" H 5850 3500 50  0001 C CNN
+F 1 "VCC" H 5867 3823 50  0000 C CNN
+F 2 "" H 5850 3650 50  0001 C CNN
+F 3 "" H 5850 3650 50  0001 C CNN
+	1    5850 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3950 5850 3950
+Wire Wire Line
+	5850 3950 5850 3650
+NoConn ~ 5750 3850
+$Comp
+L power:VCC #PWR0104
+U 1 1 5AC7624D
+P 6300 3100
+F 0 "#PWR0104" H 6300 2950 50  0001 C CNN
+F 1 "VCC" H 6317 3273 50  0000 C CNN
+F 2 "" H 6300 3100 50  0001 C CNN
+F 3 "" H 6300 3100 50  0001 C CNN
+	1    6300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_Photo_NPN_CE Q1
+U 1 1 5B27A414
+P 6200 3400
+F 0 "Q1" H 6391 3446 50  0000 L CNN
+F 1 "Q_Photo_NPN_CE" H 6391 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 3500 50  0001 C CNN
+F 3 "~" H 6200 3400 50  0001 C CNN
+	1    6200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3600 6300 3750
+Wire Wire Line
+	6300 3100 6300 3200
+$EndSCHEMATC

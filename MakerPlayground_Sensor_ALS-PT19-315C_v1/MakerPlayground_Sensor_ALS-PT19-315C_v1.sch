@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MakerPlayground_ALS-PT19-315C-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -20,7 +19,7 @@ U 1 1 5AC75D6C
 P 5550 3950
 F 0 "J1" H 5700 3850 50  0000 C CNN
 F 1 "Conn_01x04" H 5850 3950 50  0000 C CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 5550 3950 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal" H 5550 3950 50  0001 C CNN
 F 3 "~" H 5550 3950 50  0001 C CNN
 	1    5550 3950
 	-1   0    0    1   
