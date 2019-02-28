@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MakerPlayground_Actuator_Relay_v3.0-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -162,11 +163,8 @@ F 3 "~" H 5600 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4050 3400 4050 3500
-NoConn ~ 3950 2800
 Wire Wire Line
 	4050 3500 5350 3500
-Wire Wire Line
-	4150 2700 4150 2800
 Wire Wire Line
 	2700 2050 2700 2000
 Wire Wire Line
@@ -189,11 +187,14 @@ Wire Wire Line
 Wire Wire Line
 	5350 3150 5350 3500
 Wire Wire Line
-	4150 2700 5400 2700
-Wire Wire Line
 	5400 3250 5300 3250
 Wire Wire Line
 	5300 3250 5300 2800
 Wire Wire Line
 	5300 2800 5400 2800
+Wire Wire Line
+	3950 2700 3950 2800
+Wire Wire Line
+	3950 2700 5400 2700
+NoConn ~ 4150 2800
 $EndSCHEMATC
