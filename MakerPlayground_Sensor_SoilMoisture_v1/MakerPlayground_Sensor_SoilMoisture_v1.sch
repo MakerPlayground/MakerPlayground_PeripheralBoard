@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:SoilMoisture-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -88,7 +87,7 @@ F 1 "POWER_SEL" H 6900 4003 50  0000 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm" H 6900 3800 50  0001 C CNN
 F 3 "~" H 6900 3800 50  0001 C CNN
 	1    6900 3800
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
@@ -166,14 +165,14 @@ F 3 "" H 6500 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 3800 7200 3800
-Text GLabel 6800 3550 0    50   Input ~ 0
+Text GLabel 6800 4050 0    50   Input ~ 0
 VDD
-Wire Wire Line
-	6800 3550 6900 3550
-Wire Wire Line
-	6900 3550 6900 3650
 Wire Wire Line
 	6500 3750 6500 3800
 Wire Wire Line
 	6500 3800 6700 3800
+Wire Wire Line
+	6800 4050 6900 4050
+Wire Wire Line
+	6900 4050 6900 3950
 $EndSCHEMATC
