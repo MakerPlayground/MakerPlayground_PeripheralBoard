@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 238)
+    (drawings 239)
     (tracks 122)
     (zones 0)
     (modules 16)
@@ -29,8 +29,8 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -720,6 +720,9 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
+  (gr_text v1.0 (at 150.75 109.25) (layer F.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
   (gr_line (start 141.686 110) (end 141.734 110) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 140.6 109.633) (end 140.664 109.686) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 142.305 110) (end 142.585 110) (layer Edge.Cuts) (width 0.1))
@@ -963,7 +966,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_line (start 155.2 100) (end 156.6 100) (layer F.SilkS) (width 0.15))
-  (gr_text "Accelerometer\n&Gyroscope" (at 146.5 107.5) (layer F.SilkS)
+  (gr_text "Accelerometer\n&Gyroscope" (at 146.5 107.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
 
