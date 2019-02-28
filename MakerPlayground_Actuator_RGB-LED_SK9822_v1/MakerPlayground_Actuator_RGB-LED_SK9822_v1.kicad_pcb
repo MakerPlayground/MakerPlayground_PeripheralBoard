@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 223)
+    (drawings 224)
     (tracks 33)
     (zones 0)
     (modules 6)
@@ -312,6 +312,9 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
+  (gr_text v1.0 (at 140.25 109) (layer F.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
   (gr_line (start 149 102.7) (end 146.4 102.7) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 149 97.3) (end 146.4 97.3) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 149 100) (end 149 102.7) (angle -180) (layer Edge.Cuts) (width 0.15))
