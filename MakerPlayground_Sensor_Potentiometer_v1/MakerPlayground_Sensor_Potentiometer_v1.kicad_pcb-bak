@@ -115,7 +115,7 @@
     (add_net "Net-(J1-Pad3)")
   )
 
-  (module MountingHole:MountingHole_3mm (layer F.Cu) (tedit 5C758D56) (tstamp 5C761C63)
+  (module MountingHole:MountingHole_3mm locked (layer F.Cu) (tedit 5C758D56) (tstamp 5C761C63)
     (at 159 100.05)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
@@ -262,7 +262,7 @@
       (xy 0.199355 -0.596628) (xy 0.593328 -0.992663) (xy 0.790777 -0.991434)) (layer F.SilkS) (width 0.01))
   )
 
-  (module MountingHole:MountingHole_3mm (layer F.Cu) (tedit 5C758D56) (tstamp 5C759DC9)
+  (module MountingHole:MountingHole_3mm locked (layer F.Cu) (tedit 5C758D56) (tstamp 5C759DC9)
     (at 134 100.05)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")

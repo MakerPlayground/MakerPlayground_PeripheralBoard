@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 223)
+    (drawings 224)
     (tracks 8)
     (zones 0)
     (modules 5)
@@ -29,8 +29,8 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -281,6 +281,9 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   )
 
+  (gr_text v1.0 (at 147.75 109.25) (layer F.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
   (gr_arc (start 159.037 100.0583) (end 159.037 102.7583) (angle -180) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 140.353 109.2893) (end 140.392 109.3483) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 146.333 110.0153) (end 147.13 110.0153) (layer Edge.Cuts) (width 0.1))
