@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 223)
+    (drawings 224)
     (tracks 50)
     (zones 0)
     (modules 8)
@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -119,7 +119,7 @@
     (add_net VCC)
   )
 
-  (module MountingHole:MountingHole_3mm (layer F.Cu) (tedit 5C759655) (tstamp 5C76016D)
+  (module MountingHole:MountingHole_3mm locked (layer F.Cu) (tedit 5C759655) (tstamp 5C76016D)
     (at 149 105.05)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
@@ -336,7 +336,7 @@
       (net 4 GND))
   )
 
-  (module MountingHole:MountingHole_3mm (layer F.Cu) (tedit 5C759655) (tstamp 5C760140)
+  (module MountingHole:MountingHole_3mm locked (layer F.Cu) (tedit 5C759655) (tstamp 5C760140)
     (at 124 105.05)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
@@ -385,6 +385,9 @@
       (xy 0.199355 -0.596628) (xy 0.593328 -0.992663) (xy 0.790777 -0.991434)) (layer F.SilkS) (width 0.01))
   )
 
+  (gr_text v1.0 (at 140.25 114) (layer F.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
   (gr_line (start 124 107.743) (end 126.5 107.743) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 124 105.043) (end 124 102.343) (angle -180) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 131.601 95.0845) (end 131.533 95.0882) (layer Edge.Cuts) (width 0.1))
