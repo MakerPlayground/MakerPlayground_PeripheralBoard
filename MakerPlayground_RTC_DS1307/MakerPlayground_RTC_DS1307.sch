@@ -1,0 +1,268 @@
+EESchema Schematic File Version 4
+LIBS:MakerPlayground_RTC_DS1307-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS1307Z+ U1
+U 1 1 5B35ED97
+P 4900 3600
+F 0 "U1" H 4500 3950 50  0000 L CNN
+F 1 "DS1307Z+" H 4950 3950 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4900 3100 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 4900 3600 50  0001 C CNN
+	1    4900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5B35EF7A
+P 3500 3600
+F 0 "Y1" V 3454 3731 50  0000 L CNN
+F 1 "32.768kHz" V 3545 3731 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 3500 3600 50  0001 C CNN
+F 3 "~" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 3350 1    50   Input ~ 0
+X1
+Wire Wire Line
+	3500 3350 3500 3450
+Text GLabel 3500 3850 3    50   Input ~ 0
+X2
+Wire Wire Line
+	3500 3750 3500 3850
+Text GLabel 4300 3700 0    50   Input ~ 0
+X1
+Text GLabel 4300 3800 0    50   Input ~ 0
+X2
+Wire Wire Line
+	4300 3700 4400 3700
+Wire Wire Line
+	4300 3800 4400 3800
+Text GLabel 4300 3500 0    50   Input ~ 0
+SDA
+Text GLabel 4300 3400 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	4300 3400 4400 3400
+Wire Wire Line
+	4300 3500 4400 3500
+$Comp
+L power:GND #PWR02
+U 1 1 5B35F2C7
+P 4900 4100
+F 0 "#PWR02" H 4900 3850 50  0001 C CNN
+F 1 "GND" H 4905 3927 50  0000 C CNN
+F 2 "" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4000 4900 4100
+$Comp
+L power:VCC #PWR01
+U 1 1 5B35F421
+P 4800 3100
+F 0 "#PWR01" H 4800 2950 50  0001 C CNN
+F 1 "VCC" H 4817 3273 50  0000 C CNN
+F 2 "" H 4800 3100 50  0001 C CNN
+F 3 "" H 4800 3100 50  0001 C CNN
+	1    4800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3100 4800 3200
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5B35F5BE
+P 5800 3650
+F 0 "BT1" H 5918 3746 50  0000 L CNN
+F 1 "Lithium 3V" H 5918 3655 50  0000 L CNN
+F 2 "GiraffeTech-Battery:BL-25T-GLT" V 5800 3710 50  0001 C CNN
+F 3 "~" V 5800 3710 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 3600
+Text GLabel 5000 3100 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	4900 3200 4900 3100
+Wire Wire Line
+	4900 3100 5000 3100
+Text GLabel 5800 3350 1    50   Input ~ 0
+VBAT
+Wire Wire Line
+	5800 3350 5800 3450
+$Comp
+L power:GND #PWR03
+U 1 1 5B35F90B
+P 5800 3850
+F 0 "#PWR03" H 5800 3600 50  0001 C CNN
+F 1 "GND" H 5805 3677 50  0000 C CNN
+F 2 "" H 5800 3850 50  0001 C CNN
+F 3 "" H 5800 3850 50  0001 C CNN
+	1    5800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3750 5800 3850
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5B35FA95
+P 9050 3600
+F 0 "J1" H 9130 3592 50  0000 L CNN
+F 1 "Conn_01x04" H 9130 3501 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 9050 3600 50  0001 C CNN
+F 3 "~" H 9050 3600 50  0001 C CNN
+	1    9050 3600
+	1    0    0    1   
+$EndComp
+Text GLabel 8750 3500 0    50   Input ~ 0
+SDA
+Text GLabel 8750 3400 0    50   Input ~ 0
+SCL
+Text GLabel 7150 3800 0    50   Input ~ 0
+SDA
+Text GLabel 6650 3800 0    50   Input ~ 0
+SCL
+$Comp
+L Device:R_Small R1
+U 1 1 5B35FF09
+P 6750 3600
+F 0 "R1" H 6809 3646 50  0000 L CNN
+F 1 "10k" H 6809 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6750 3600 50  0001 C CNN
+F 3 "~" H 6750 3600 50  0001 C CNN
+	1    6750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5B35FF33
+P 7250 3600
+F 0 "R2" H 7309 3646 50  0000 L CNN
+F 1 "10k" H 7309 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7250 3600 50  0001 C CNN
+F 3 "~" H 7250 3600 50  0001 C CNN
+	1    7250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3800 6750 3800
+Wire Wire Line
+	6750 3800 6750 3700
+Wire Wire Line
+	7150 3800 7250 3800
+Wire Wire Line
+	7250 3800 7250 3700
+$Comp
+L power:VCC #PWR04
+U 1 1 5B3605BD
+P 6750 3400
+F 0 "#PWR04" H 6750 3250 50  0001 C CNN
+F 1 "VCC" H 6767 3573 50  0000 C CNN
+F 2 "" H 6750 3400 50  0001 C CNN
+F 3 "" H 6750 3400 50  0001 C CNN
+	1    6750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3400 6750 3500
+$Comp
+L power:VCC #PWR05
+U 1 1 5B3608CD
+P 7250 3400
+F 0 "#PWR05" H 7250 3250 50  0001 C CNN
+F 1 "VCC" H 7267 3573 50  0000 C CNN
+F 2 "" H 7250 3400 50  0001 C CNN
+F 3 "" H 7250 3400 50  0001 C CNN
+	1    7250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3400 7250 3500
+$Comp
+L power:GND #PWR07
+U 1 1 5B361542
+P 8750 3800
+F 0 "#PWR07" H 8750 3550 50  0001 C CNN
+F 1 "GND" H 8755 3627 50  0000 C CNN
+F 2 "" H 8750 3800 50  0001 C CNN
+F 3 "" H 8750 3800 50  0001 C CNN
+	1    8750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3700 8750 3700
+Wire Wire Line
+	8750 3700 8750 3800
+$Comp
+L power:VCC #PWR06
+U 1 1 5B36174C
+P 8750 3600
+F 0 "#PWR06" H 8750 3450 50  0001 C CNN
+F 1 "VCC" V 8768 3727 50  0000 L CNN
+F 2 "" H 8750 3600 50  0001 C CNN
+F 3 "" H 8750 3600 50  0001 C CNN
+	1    8750 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 3600 8850 3600
+Wire Wire Line
+	8750 3400 8850 3400
+Wire Wire Line
+	8750 3500 8850 3500
+$Comp
+L Device:C_Small C1
+U 1 1 5B36110B
+P 7850 3600
+F 0 "C1" H 7942 3646 50  0000 L CNN
+F 1 "0.1uF" H 7942 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7850 3600 50  0001 C CNN
+F 3 "~" H 7850 3600 50  0001 C CNN
+	1    7850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5B361147
+P 7850 3400
+F 0 "#PWR08" H 7850 3250 50  0001 C CNN
+F 1 "VCC" H 7867 3573 50  0000 C CNN
+F 2 "" H 7850 3400 50  0001 C CNN
+F 3 "" H 7850 3400 50  0001 C CNN
+	1    7850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3400 7850 3500
+$Comp
+L power:GND #PWR09
+U 1 1 5B36134D
+P 7850 3800
+F 0 "#PWR09" H 7850 3550 50  0001 C CNN
+F 1 "GND" H 7855 3627 50  0000 C CNN
+F 2 "" H 7850 3800 50  0001 C CNN
+F 3 "" H 7850 3800 50  0001 C CNN
+	1    7850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3700 7850 3800
+$EndSCHEMATC
