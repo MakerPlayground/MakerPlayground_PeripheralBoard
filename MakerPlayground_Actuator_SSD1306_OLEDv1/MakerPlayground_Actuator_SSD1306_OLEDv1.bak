@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MakerPlayground_Actuator_SSD1306_OLEDv1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -88,11 +89,11 @@ Wire Wire Line
 	3800 2550 3900 2550
 Wire Wire Line
 	3900 2550 3900 2650
-Text GLabel 4000 2350 2    50   Input ~ 0
+Text GLabel 4000 2250 2    50   Input ~ 0
 SDA
 Wire Wire Line
 	3800 2350 4000 2350
-Text GLabel 4000 2250 2    50   Input ~ 0
+Text GLabel 4000 2350 2    50   Input ~ 0
 SCL
 Wire Wire Line
 	3800 2250 4000 2250
@@ -209,7 +210,7 @@ L Device:C_Small C2
 U 1 1 5CADAB49
 P 6300 2350
 F 0 "C2" H 6392 2396 50  0000 L CNN
-F 1 "10uF" H 6392 2305 50  0000 L CNN
+F 1 "0.1uF" H 6392 2305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6300 2350 50  0001 C CNN
 F 3 "~" H 6300 2350 50  0001 C CNN
 	1    6300 2350
